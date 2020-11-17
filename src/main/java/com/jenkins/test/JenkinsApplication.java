@@ -15,9 +15,9 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 public class JenkinsApplication {
 
-    @RequestMapping("/jenkins")
+    @RequestMapping("/jenkins/test")
     String index() {
-        return "Hello Spring Boot";
+        return "Hello jenkins Boot test!";
 
     }
 
