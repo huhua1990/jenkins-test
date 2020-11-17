@@ -1,5 +1,8 @@
 spring:
   application:
     name: jenkins-demo
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
 server:
-  port: 8086
+  port: 8084

@@ -2,8 +2,8 @@ package com.jenkins.test;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 
 /**
  * @Description
@@ -11,13 +11,13 @@ import org.springframework.web.bind.annotation.RestController;
  * @Date: 2020/11/17 10:22
  * @Version:1.0
  */
-@RestController
+@Controller
 @SpringBootApplication
 public class JenkinsApplication {
 
-    @RequestMapping("/jenkins/test")
-    String index() {
-        return "Hello jenkins Boot test!";
+    @GetMapping("/index")
+    public String index() {
+        return "index";
 
     }
 
